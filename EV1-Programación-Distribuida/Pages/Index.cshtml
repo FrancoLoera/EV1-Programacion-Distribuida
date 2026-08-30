@@ -1,10 +1,330 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Reguetón";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="reggaeton-site">
+
+    <!-- HERO -->
+    <section class="hero-reggaeton">
+
+        <div class="hero-left">
+
+            <span class="tag">MÚSICA URBANA</span>
+
+            <h1>
+                EL RITMO<br />
+                QUE <span>NO PARA</span>
+            </h1>
+
+            <p>
+                Descubre la historia, evolución y protagonistas de uno
+                de los géneros musicales más influyentes de Latinoamérica.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#historia" class="btn-primary-reg">
+                    Explorar género
+                </a>
+
+                <a href="#artistas" class="btn-secondary-reg">
+                    Ver artistas
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-right">
+
+            <div class="disc">
+                <div class="disc-center">
+                    <span>REG</span>
+                </div>
+            </div>
+
+            <div class="floating-text text-one">
+                <strong>+20</strong>
+                <small>AÑOS DE HISTORIA</small>
+            </div>
+
+            <div class="floating-text text-two">
+                <strong>∞</strong>
+                <small>RITMO</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats">
+
+        <div class="stat">
+            <strong>01</strong>
+            <span>GÉNERO<br />URBANO</span>
+        </div>
+
+        <div class="stat">
+            <strong>02</strong>
+            <span>RAÍCES<br />LATINAS</span>
+        </div>
+
+        <div class="stat">
+            <strong>03</strong>
+            <span>IMPACTO<br />GLOBAL</span>
+        </div>
+
+        <div class="stat">
+            <strong>04</strong>
+            <span>SONIDO<br />EN CONSTANTE EVOLUCIÓN</span>
+        </div>
+
+    </section>
+
+    <!-- HISTORIA -->
+    <section id="historia" class="history-section">
+
+        <div class="history-content">
+
+            <div class="history-title">
+
+                <h2>
+                    De las calles<br />
+                    al mundo.
+                </h2>
+
+                <div class="history-image">
+                    <img src="~/images/origen.jpg" alt="Historia del reguetón">
+                </div>
+
+            </div>
+
+            <div class="history-text">
+
+                <p>
+                    El reguetón es un género musical que se desarrolló
+                    principalmente en Puerto Rico y Panamá, combinando
+                    influencias del reggae, dancehall, hip hop y música
+                    latinoamericana.
+                </p>
+
+                <p>
+                    Con el paso de los años, su sonido evolucionó hasta
+                    convertirse en uno de los principales representantes
+                    de la música urbana latina.
+                </p>
+
+                <p>
+                    Durante las décadas de 1990 y 2000, el reguetón comenzó a ganar
+                    mayor reconocimiento entre el público latinoamericano.
+                    Artistas y productores de Puerto Rico fueron fundamentales para
+                    consolidar el género, incorporando nuevos sonidos y estilos que ayudaron a definir su identidad.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARACTERÍSTICAS -->
+    <section class="features-section">
+
+        <div class="section-heading">
+
+            <span class="section-label">EL SONIDO</span>
+
+            <h2>
+                ¿Qué hace diferente<br />
+                al reguetón?
+            </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card feature-large">
+
+                <div class="feature-icon">◉</div>
+
+                <h3>El Dembow</h3>
+
+                <p>
+                    Uno de los elementos rítmicos más reconocibles
+                    del género y una pieza fundamental de su identidad.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">♫</div>
+
+                <h3>Fusión</h3>
+
+                <p>
+                    El género incorpora elementos de distintos estilos
+                    musicales para crear nuevos sonidos.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">↗</div>
+
+                <h3>Evolución</h3>
+
+                <p>
+                    Su sonido cambia constantemente y se adapta a
+                    nuevas tendencias musicales.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ARTISTAS -->
+    <section id="artistas" class="artists-section">
+
+        <div class="artists-header">
+
+            <div>
+                <span class="section-label">VOCES DEL GÉNERO</span>
+
+                <h2>Artistas que<br />marcaron una era.</h2>
+            </div>
+
+            <p>
+                Diferentes generaciones han contribuido a la evolución
+                y expansión internacional del reguetón. Puedes hacer clic
+                en los artistas para conocer más sobre su música y trayectoria
+                directamente desde su pagina de Spotify.
+            </p>
+
+        </div>
+
+
+        <div class="artists-grid">
+
+            <!-- DADDY YANKEE -->
+            <a href="https://open.spotify.com/artist/5MTEUecvSde4eSLO11Hs7P"
+               target="_blank"
+               class="artist-card">
+
+                <img src="~/images/daddyYankee.jpg" alt="Daddy Yankee">
+
+                <div class="artist-info">
+
+                    <h3>Daddy<br />Yankee</h3>
+
+                    <p>Pionero y referente internacional.</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- DON OMAR -->
+            <a href="https://open.spotify.com/intl-es/artist/33ScadVnbm2X8kkUqOkC6Z"
+               target="_blank"
+               class="artist-card">
+
+                <img src="~/images/donOmar.jpg" alt="Don Omar">
+
+                <div class="artist-info">
+
+                    <h3>Don<br />Omar</h3>
+
+                    <p>Una de las voces fundamentales del género.</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- J BALVIN -->
+            <a href="https://open.spotify.com/intl-es/artist/1vyhD5VmyZ7KMfW5gqLgo5"
+               target="_blank"
+               class="artist-card">
+
+                <img src="~/images/jBalvin.jpg" alt="J Balvin">
+
+                <div class="artist-info">
+
+                    <h3>J Balvin</h3>
+
+                    <p>Figura clave de la expansión global.</p>
+
+                </div>
+
+            </a>
+
+
+            <!-- BAD BUNNY -->
+            <a href="https://open.spotify.com/intl-es/artist/4q3ewBCX7sLwd24euuV69X"
+               target="_blank"
+               class="artist-card">
+
+                <img src="~/images/BadBunny.jpg" alt="Bad Bunny">
+
+                <div class="artist-info">
+
+                    <h3>Bad<br />Bunny</h3>
+
+                    <p>Una nueva generación de música urbana.</p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-section">
+
+        <div class="final-image">
+            <img src="~/images/artistas.jpg" alt="ArtistasVarios">
+        </div>
+
+        <div class="final-content">
+
+            <span class="section-label">MÁS QUE MÚSICA</span>
+
+            <h2>
+                UN RITMO.<br />
+                UNA CULTURA.<br />
+                <span>UNA GENERACIÓN.</span>
+            </h2>
+
+            <p>
+                El reguetón continúa transformándose y cruzando fronteras,
+                conectando diferentes culturas a través de la música.
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer class="reg-footer">
+        <div>
+            <strong>REGUETÓN</strong>
+            <span> | Música urbana latinoamericana</span>
+        </div>
+
+        <p>© 2026 - Proyecto académico</p>
+    </footer>
+
 </div>
