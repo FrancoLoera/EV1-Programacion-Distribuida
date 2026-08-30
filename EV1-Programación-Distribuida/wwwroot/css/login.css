@@ -98,11 +98,11 @@ a {
         inset: 0;
         background: rgba(0, 0, 0, 0);
         transition: background 0.3s ease;
-        border-radius: 25px;
+        border-radius: 25px 25px 0 0;
     }
 
     .custom-card:hover .card-img-container::after {
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.1);
     }
 
 .card-meta {
@@ -132,7 +132,7 @@ a {
     }
 
     .custom-card img {
-        border-radius: 25px;
+        border-radius: 25px 25px 0 0;
     }
 
     .custom-card-body {
@@ -153,4 +153,11 @@ a {
     letter-spacing: 2px;
     font-weight: 900;
     font-size: 3rem;
+}
+
+.music-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
