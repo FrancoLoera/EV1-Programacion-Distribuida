@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EV1_Programación_Distribuida.Pages
 {
-    public class IndexModel : PageModel
+    public class PopModel : PageModel
     {
         public void OnGet()
         {
