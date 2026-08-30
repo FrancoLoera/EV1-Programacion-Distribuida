@@ -1,0 +1,95 @@
+@page
+@model TemasModel
+@{
+    ViewData["Title"] = "Temas y Categorías";
+}
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h1 class="text-danger border-bottom border-danger pb-2 mb-3">Categorías y Bandas</h1>
+        <p class="text-secondary fs-5">Explora el catálogo de categorías del rock en español a través de sus bandas más emblemáticas.</p>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/Caifanes.jpg" class="card-img-top" alt="Caifanes" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Post-Punk & Gótico</h5>
+                <p class="card-text text-secondary small">Caifanes lidera esta vertiente espiritual y mística del rock.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/cafetacvba.jpg" class="card-img-top" alt="Cafe Tacvba" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Folk-Rock & AlterLatino</h5>
+                <p class="card-text text-secondary small">Café Tacvba combina raíces folclóricas con experimentación electrónica.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/enjambre.jpg" class="card-img-top" alt="Enjambre" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Indie Rock</h5>
+                <p class="card-text text-secondary small">Enjambre destaca por su sonido nostálgico inspirado en los 60 y 70.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/fobia.jpg" class="card-img-top" alt="Fobia" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Rock Pop Espacial</h5>
+                <p class="card-text text-secondary small">Fobia aporta melodías divertidas, guitarras ácidas y letras excéntricas.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/maná.jpg" class="card-img-top" alt="Maná" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Pop Rock & Baladas</h5>
+                <p class="card-text text-secondary small">Maná es el máximo exponente comercial y global del pop rock latino.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/molotov.jpg" class="card-img-top" alt="Molotov" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Rap Rock & Sátira</h5>
+                <p class="card-text text-secondary small">Molotov sacude con su potente rap metal y letras cargadas de crítica social.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/pxndx.jpg" class="card-img-top" alt="Panda" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Happy Punk & Emo</h5>
+                <p class="card-text text-secondary small">Pxndx lideró la ola de punk rock melódico e introspectivo en los 2000.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/serbia.jpg" class="card-img-top" alt="Serbia" style="height: 180px; object-fit: cover;">
+            <div class="card-body text-center">
+                <h5 class="card-title text-light">Rock Alternativo Moderno</h5>
+                <p class="card-text text-secondary small">Serbia es uno de los rostros jóvenes y dinámicos del rock nacional actual.</p>
+                <a asp-page="/Articulos" class="btn btn-danger btn-sm w-100 mt-2">Ver Artículo</a>
+            </div>
+        </div>
+    </div>
+</div>

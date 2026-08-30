@@ -1,10 +1,55 @@
-﻿@page
+@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="p-5 mb-4 rounded-3" style="background: linear-gradient(180deg, #1e1e1e 0%, #000000 100%); border: 1px solid #ff3344;">
+    <div class="container-fluid py-3 text-center">
+        <h1 class="display-5 fw-bold text-danger">EL ALMA DEL ROCK EN ESPAÑOL</h1>
+        <p class="col-md-12 fs-4 text-light">Explora la historia, las bandas legendarias, los nuevos exponentes y la pasión del género musical que definió a generaciones en Latinoamérica y España.</p>
+        <a class="btn btn-danger btn-lg px-4" asp-page="/Articulos">Leer Artículo Principal</a>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-12">
+        <h2 class="text-danger border-bottom border-danger pb-2 mb-4">Últimas Publicaciones</h2>
+    </div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/Caifanes.jpg" class="card-img-top" alt="Caifanes" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <span class="badge bg-danger mb-2">Leyendas</span>
+                <h5 class="card-title text-light">Caifanes: El Ritual del Rock Mexicano</h5>
+                <p class="card-text text-secondary">Analizamos el impacto de su sonido místico que fusionó el post-punk con ritmos autóctonos de México.</p>
+                <a asp-page="/Temas" class="btn btn-outline-danger btn-sm">Ver más</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/cafetacvba.jpg" class="card-img-top" alt="Cafe Tacvba" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <span class="badge bg-danger mb-2">Alternativo</span>
+                <h5 class="card-title text-light">Café Tacvba y la Erupción del Rock Mestizo</h5>
+                <p class="card-text text-secondary">Descubre cómo esta icónica agrupación de Satélite revolucionó la música alternativa hispanohablante.</p>
+                <a asp-page="/Temas" class="btn btn-outline-danger btn-sm">Ver más</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow border-danger">
+            <img src="/img/enjambre.jpg" class="card-img-top" alt="Enjambre" style="height: 200px; object-fit: cover;">
+            <div class="card-body">
+                <span class="badge bg-danger mb-2">Indie Rock</span>
+                <h5 class="card-title text-light">Enjambre y su Estilo Vintage Moderno</h5>
+                <p class="card-text text-secondary">Un recorrido por las melodías nostálgicas que han posicionado a Enjambre en el corazón del indie latino.</p>
+                <a asp-page="/Temas" class="btn btn-outline-danger btn-sm">Ver más</a>
+            </div>
+        </div>
+    </div>
 </div>

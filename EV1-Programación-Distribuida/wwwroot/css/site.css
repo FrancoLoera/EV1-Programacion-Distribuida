@@ -1,31 +1,59 @@
 html {
   font-size: 14px;
 }
-
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
 }
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 html {
   position: relative;
   min-height: 100%;
 }
-
 body {
   margin-bottom: 60px;
+  background-color: #121212 !important;
 }
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.bg-black {
+  background-color: #000000 !important;
 }
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff3344 !important;
+}
+.card {
+  background-color: #1e1e1e !important;
+  border-color: #343a40 !important;
+}
+.text-danger {
+  color: #ff3344 !important;
+}
+.border-danger {
+  border-color: #ff3344 !important;
+}
+.btn-danger {
+  background-color: #ff3344 !important;
+  border-color: #ff3344 !important;
+}
+.btn-danger:hover {
+  background-color: #cc2233 !important;
+  border-color: #cc2233 !important;
+}
+.btn-outline-danger {
+  color: #ff3344 !important;
+  border-color: #ff3344 !important;
+}
+.btn-outline-danger:hover {
+  background-color: #ff3344 !important;
+  color: #ffffff !important;
+}
+.form-control, .form-select {
+  background-color: #2a2a2a !important;
+  border-color: #444444 !important;
+  color: #ffffff !important;
+}
+.form-control:focus, .form-select:focus {
+  background-color: #2a2a2a !important;
+  border-color: #ff3344 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 51, 68, 0.25) !important;
 }

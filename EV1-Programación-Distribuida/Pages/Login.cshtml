@@ -1,0 +1,35 @@
+@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+}
+
+<div class="row justify-content-center my-5">
+    <div class="col-md-5">
+        <div class="card shadow border-danger">
+            <div class="card-header bg-black text-center border-bottom border-danger py-4">
+                <h3 class="text-danger fw-bold mb-0">INICIAR SESIÓN</h3>
+            </div>
+            <div class="card-body p-4 bg-dark text-light">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input bg-dark border-secondary" id="remember" name="remember">
+                        <label class="form-check-label text-secondary" for="remember">Recordarme en este dispositivo</label>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100 py-2 fw-bold text-uppercase">Ingresar</button>
+                </form>
+                <div class="text-center mt-4">
+                    <p class="mb-0 text-secondary">¿No tienes cuenta? <a asp-page="/SignUp" class="text-danger fw-bold text-decoration-none">Regístrate aquí</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

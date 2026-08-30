@@ -1,0 +1,84 @@
+@page
+@model ContactoModel
+@{
+    ViewData["Title"] = "Contacto";
+}
+
+<div class="row justify-content-center my-4">
+    <div class="col-md-8">
+        <div class="card shadow border-danger mb-5">
+            <div class="card-header bg-black text-center border-bottom border-danger py-4">
+                <h3 class="text-danger fw-bold mb-0">FORMULARIO DE CONTACTO</h3>
+            </div>
+            <div class="card-body p-4 bg-dark text-light">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="motivo" class="form-label">Motivo de Contacto</label>
+                            <select class="form-select" id="motivo" name="motivo" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="sugerencia">Sugerencia de Banda</option>
+                                <option value="publicidad">Publicidad / Alianzas</option>
+                                <option value="soporte">Problema Técnico</option>
+                                <option value="otro">Otro Asunto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="interes" class="form-label">Nivel de fanatismo por el Rock (1 al 10)</label>
+                        <input type="range" class="form-range" min="1" max="10" step="1" id="interes" name="interes">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label d-block">¿Cómo conociste nuestro blog?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bg-dark border-secondary" type="radio" name="origen" id="origen1" value="redes" checked>
+                            <label class="form-check-label" for="origen1">Redes Sociales</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bg-dark border-secondary" type="radio" name="origen" id="origen2" value="busqueda">
+                            <label class="form-check-label" for="origen2">Buscador Web</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input bg-dark border-secondary" type="radio" name="origen" id="origen3" value="recomendacion">
+                            <label class="form-check-label" for="origen3">Recomendación</label>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="archivo" class="form-label">Adjuntar captura o imagen relacionada (Opcional)</label>
+                        <input class="form-control" type="file" id="archivo" name="archivo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" class="form-check-input bg-dark border-secondary" id="suscripcion" name="suscripcion">
+                        <label class="form-check-label text-secondary" for="suscripcion">Deseo recibir el boletín semanal de noticias sobre Rock en Español</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger w-100 py-2 fw-bold text-uppercase">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
