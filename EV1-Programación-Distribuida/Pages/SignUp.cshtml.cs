@@ -3,11 +3,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EV1_Programación_Distribuida.Pages
 {
-    public class IndexModel : PageModel
+    public class SignUpModel : PageModel
     {
         public void OnGet()
         {
-
         }
     }
 }
