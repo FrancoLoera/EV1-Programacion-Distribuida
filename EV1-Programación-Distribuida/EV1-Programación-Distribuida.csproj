@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\img\Nosotros\" />
     <Folder Include="wwwroot\img\pop Roman\" />
   </ItemGroup>
 
