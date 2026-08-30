@@ -72,3 +72,34 @@ a {
         color: black;
         transform: translateY(-3px);
     }
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+    .card-img-container::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.3s ease;
+    }
+
+    .card-img-container:hover::after {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+.card-meta {
+    font-size: 14px;
+    color: darkgray;
+}
+
+.card-meta a {
+    color: darkgray;
+    transition: 0.2s;
+}
+
+.card-meta a:hover {
+    color: black;
+}
