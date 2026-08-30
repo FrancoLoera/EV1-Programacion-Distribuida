@@ -56,3 +56,19 @@ a {
     .btn-casual:hover {
         box-shadow: 0 0 0 .25rem rgba(104, 104, 104, 0.25);
     }
+
+.navbar {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    transition: 0.2s;
+}
+
+    .nav-link:hover {
+        color: black;
+        transform: translateY(-3px);
+    }
