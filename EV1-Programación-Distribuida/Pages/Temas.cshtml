@@ -1,31 +1,26 @@
 ﻿@page
-@model EV1_Programación_Distribuida.Pages.HomeModel
+@model EV1_Programación_Distribuida.Pages.TemasModel
 @{
-    Layout = "_Layout";
 }
 <section id="hero-section" class="d-flex flex-column align-items-center justify-content-center pb-5 mb-5">
     <div class="text-center">
-        <img src="~/images/Fondo abstracto panorámico.png" class="rounded-3 shadow" style="width: 55%"/>
+        <img src="~/images/Fondo abstracto oscuro panorámico.png" class="rounded-3 shadow" style="width: 55%" />
     </div>
 
     <div class="w-50 mt-4 d-flex flex-column align-items-center">
-        <h1 class="align-self-center text-center">Tu música, en un solo Cassette.</h1>
-        <p class="text-center">Explora historias, artistas, álbumes y géneros que han dejado huella en la música. Rebobina, descubre y encuentra algo nuevo para escuchar.</p>
-        <a class="btn-casual" asp-page="/Temas">
-            Explorar temas
-        </a>
+        <h1 class="align-self-center text-center">Explora por temas.</h1>
+        <p class="text-center">Encuentra nuevas historias y perspectivas sobre tus artistas, álbumes y géneros favoritos. Explora cada tema y descubre contenido que conecte con lo que más te gusta de la música.</p>
     </div>
 </section>
-<section id="feed-section" class="d-flex flex-column align-items-center justify-content-center rounded shadow p-5" style="background-color: #F8F8F8;">
-    <i class="bi bi-music-note-beamed fs-1"></i>
-    <h2>Descubre algo para escuchar</h2>
-    <p class="mb-4">Explora nuestras últimas publicaciones y encuentra algo que encaje contigo.</p>
+<section id="feed-section" class="d-flex flex-column align-items-center justify-content-center">
+    <h2>Encuentra tu tema</h2>
+    <p class="mb-4">Explora nuestras categorías y descubre contenido sobre los artistas, géneros, álbumes y estilos que más te interesan.</p>
 
     <!-- Primer fila feed -->
     <div class="row mb-4">
-        <div class="col-6">
+        <div class="col-4">
             <a href="#">
-                <div class="custom-card" >
+                <div class="custom-card">
                     <div class="card-img-container">
                         <img src="~/images/Fondo abstracto.png" style="width: 100%">
                     </div>
@@ -40,9 +35,26 @@
                 </div>
             </a>
         </div>
-        <div class="col-6">
+        <div class="col-4">
             <a href="#">
-                <div class="custom-card" >
+                <div class="custom-card">
+                    <div class="card-img-container">
+                        <img src="~/images/Fondo abstracto.png" style="width: 100%">
+                    </div>
+                    <div class="custom-card-body">
+                        <h5 class="card-title">Conociendo al Electro Pop</h5>
+                        <div class="card-meta d-flex mt-2 mb-2">
+                            <p class="mb-0"><i class="bi bi-person-fill ms-0 me-1"></i>Román</p>
+                            <p class="mb-0" asp-page="/Home"><i class="bi bi-bookmark-fill ms-3 me-1"></i>Pop</p>
+                        </div>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="#">
+                <div class="custom-card">
                     <div class="card-img-container">
                         <img src="~/images/Fondo abstracto.png" style="width: 100%">
                     </div>
@@ -61,7 +73,7 @@
 
     <!-- Segunda fila feed -->
     <div class="row mb-5">
-        <div class="col-6">
+        <div class="col-4">
             <article>
                 <a href="#">
                     <div class="custom-card">
@@ -80,7 +92,7 @@
                 </a>
             </article>
         </div>
-        <div class="col-6">
+        <div class="col-4">
             <article>
                 <a href="#">
                     <div class="custom-card">
@@ -100,8 +112,6 @@
             </article>
         </div>
     </div>
-
-    <a asp-page="/Temas" class="btn-casual">Ver todos los temas</a>
 </section>
 <section id="contact-section" class="d-flex flex-column align-items-center justify-content-center mt-5">
     <div class="cta-container w-75 rounded shadow p-5">

@@ -57,6 +57,20 @@ a {
         box-shadow: 0 0 0 .25rem rgba(104, 104, 104, 0.25);
     }
 
+.btn-casual-white {
+    background-color: white;
+    font-weight: 900;
+    color: black;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    transition: box-shadow 0.15s ease-in-out;
+    letter-spacing: 1px;
+}
+
+    .btn-casual-white:hover {
+        box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0.25);
+    }
+
 .navbar {
     font-size: 14px;
     font-weight: 600;
@@ -84,10 +98,11 @@ a {
         inset: 0;
         background: rgba(0, 0, 0, 0);
         transition: background 0.3s ease;
+        border-radius: 25px;
     }
 
-    .card-img-container:hover::after {
-        background: rgba(0, 0, 0, 0.4);
+    .custom-card:hover .card-img-container::after {
+        background: rgba(0, 0, 0, 0.2);
     }
 
 .card-meta {
@@ -102,4 +117,40 @@ a {
 
 .card-meta a:hover {
     color: black;
+}
+
+.custom-card {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+    transition: 0.2s;
+}
+
+    .custom-card:hover {
+        transform: translateY(-7px);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px
+    }
+
+    .custom-card img {
+        border-radius: 25px;
+    }
+
+    .custom-card-body {
+        padding: 1rem;
+    }
+
+.cta-container {
+    background-color: #222;
+    background-image: url('/images/Fondo círculos concéntricos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.cta-container h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 3rem;
 }
