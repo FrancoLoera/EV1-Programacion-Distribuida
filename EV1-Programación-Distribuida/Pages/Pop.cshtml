@@ -1,0 +1,130 @@
+﻿@page
+@model EV1_Programación_Distribuida.Pages.PopModel
+@{
+    ViewData["Title"] = "Pop";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        background-color: #f6c744;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .fondo-pop {
+        background-color: #f6c744;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        min-height: 80vh;
+    }
+
+    .recuadro-pop {
+        background-color: #d99a1f;
+        color: white;
+        max-width: 850px;
+        width: 100%;
+        padding: 30px 45px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+        .recuadro-pop h1, .recuadro-pop h2 {
+            font-weight: 700;
+        }
+
+        .recuadro-pop p, .recuadro-pop ul {
+            text-align: justify;
+        }
+
+        .recuadro-pop img {
+            border-radius: 8px;
+            margin: 15px 0;
+            max-width: 100%;
+        }
+
+        .recuadro-pop a {
+            color: white;
+            font-weight: 600;
+        }
+</style>
+
+<div class="fondo-pop">
+    <div class="recuadro-pop">
+
+        <h1>Pop</h1>
+        <br />
+
+        <p>
+            La música Pop, es un género musical orientado principalmente a llegar a un público amplio.
+            Se caracteriza por utilizar melodías fáciles de recordar, estructuras sencillas y ritmos atractivos.
+            Ha evolucionado constantemente, incorporando elementos de otros géneros como el rock, R&B,
+            electrónica, hip-hop, disco y música latina, por lo que es uno de los géneros más
+            variados y populares del mundo.
+        </p>
+
+        <img src="~/img/pop Roman/pop1.jpg" alt="Imagen Pop" width="500" />
+        <br />
+        <br />
+
+        <h2>Origen del género</h2>
+        <br />
+        <p>
+            Aunque la música popular existía desde antes, el Pop como género comenzó a
+            desarrollarse principalmente durante las décadas de 1950 y 1960, especialmente en
+            Estados Unidos y Reino Unido, con gran influencia del rock and roll y el rhythm and
+            blues (R&B). Durante los años 60, artistas como The Beatles ayudaron a transformar la
+            música popular en un fenómeno internacional. En los 70 recibió influencia de la
+            música disco; en los 80 destacó el uso de sintetizadores y videoclips; en los 90
+            incorporó elementos del R&B y hip-hop; y en el siglo XXI se combinó cada vez más con
+            música electrónica, urbana y latina.
+        </p>
+        <br />
+
+        <h2>Características principales</h2>
+        <br />
+        <ul style="list-style-position: inside; padding: 0;">
+            <li>Melodías pegadizas, fáciles de recordar y cantar.</li>
+            <li>Estructuras sencillas, como verso, coro, verso y coro.</li>
+            <li>Coros destacados, generalmente la parte más memorable de la canción.</li>
+            <li>Duración relativamente corta, pensada para mantener la atención del público.</li>
+            <li>Producción moderna, combinando instrumentos tradicionales con sintetizadores y efectos digitales.</li>
+            <li>Gran alcance comercial en radio, televisión, streaming y redes sociales.</li>
+            <li>Evolución constante según las tendencias musicales y tecnológicas de cada época.</li>
+        </ul>
+        <br />
+
+        <h2>Subgéneros</h2>
+        <br />
+        <p>
+            El Pop se ha mezclado con numerosos géneros a lo largo del tiempo. El <strong>Pop Rock</strong>
+            combina melodías del Pop con guitarras de rock (grupos como Maroon 5, OneRepublic). El
+            <strong>Synth-pop</strong> utiliza sintetizadores como elemento principal (The Weeknd).
+            El <strong>Dance-pop</strong> mezcla el Pop con música electrónica bailable
+            (Madonna, Britney Spears). El <strong>Pop R&B</strong> combina el Pop con soul y música
+            urbana (Beyoncé, Rihanna). El <strong>K-pop</strong>, desarrollado en Corea del Sur, mezcla
+            Pop con hip-hop y elaboradas coreografías (BTS, BLACKPINK). Y el <strong>Latin Pop</strong>
+            incorpora ritmos latinoamericanos (Shakira, Ricky Martin).
+        </p>
+        <br />
+
+        <h2>Artistas representativos</h2>
+        <br />
+        <p>
+            Entre 1960 y 1980 destacaron The Beatles, Elton John y ABBA. En los años 80, uno de los
+            máximos exponentes del género, Michael Jackson, conocido como el Rey del Pop,
+            además de Madonna y Whitney Houston. En los 90, Britney Spears, Backstreet Boys y Spice Girls
+            dominaron el género. Desde el 2000 hasta la actualidad destacan Lady Gaga, Taylor Swift,
+            Ariana Grande, Dua Lipa y Billie Eilish, entre muchos otros artistas que continúan reinventando el Pop.
+        </p>
+
+        <img src="~/img/pop Roman/pop2.png" alt="Artista de Pop" width="500" />
+
+        <br />
+        <br />
+        <a href="/Index">Volver al inicio</a>
+
+    </div>
+</div>
