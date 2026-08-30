@@ -7,4 +7,8 @@
     <RootNamespace>EV1_Programación_Distribuida</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\pop Roman\" />
+  </ItemGroup>
+
 </Project>
