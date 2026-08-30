@@ -1,0 +1,88 @@
+﻿.team-page {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 40px 0;
+}
+
+.team-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.team-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+    .team-table th {
+        background-color: #222;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .team-table td {
+        padding: 18px 15px;
+        vertical-align: middle;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .team-table tr:last-child td {
+        border-bottom: none;
+    }
+
+.member-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.member-name {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.member-id {
+    color: #666;
+    font-size: 14px;
+}
+
+.member-description {
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+    .team-table th:nth-child(3),
+    .team-table td:nth-child(3) {
+        display: none;
+    }
+
+    .team-table th,
+    .team-table td {
+        padding: 12px 8px;
+    }
+
+    .member-image {
+        width: 65px;
+        height: 65px;
+    }
+}
