@@ -78,9 +78,68 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted pt-2 pb-2">
+    <footer class="text-white py-5 mt-5" style="background-color: #222";>
         <div class="container">
-            &copy; 2026 - Cassette
+            <div class="row gy-4 justify-content-between">
+                <div class="col-12 col-md-7">
+                    <a asp-page="/Home" class="d-inline-block mb-3">
+                        <img src="~/images/Cassette logo white.png"
+                             alt="Cassette"
+                             height="40">
+                    </a>
+
+                    <p class="text-white-50 mb-4">
+                        Un espacio para descubrir artistas, álbumes, géneros
+                        y las historias detrás de la música.
+                    </p>
+
+                    <nav aria-label="Navegación del pie de página">
+                        <ul class="nav gap-3">
+                            <li class="nav-item">
+                                <a asp-page="/Home"
+                                   class="nav-link px-0 text-white">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/Temas"
+                                   class="nav-link px-0 text-white">
+                                    Temas
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/Nosotros"
+                                   class="nav-link px-0 text-white">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-page="/Contacto"
+                                   class="nav-link px-0 text-white">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-auto d-flex align-items-md-end">
+                    <a href="https://github.com/FrancoLoera/EV1-Programacion-Distribuida" target="_blank" class="btn btn-outline-light">
+                        <i class="bi bi-github me-2"></i>
+                        Ver repositorio
+                    </a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+                <small class="text-white-50">
+                    © 2026 Cassette. Todos los derechos reservados.
+                </small>
+                <small class="text-white-50">
+                    Hecho con ASP.NET Core Razor Pages
+                </small>
+            </div>
         </div>
     </footer>
 
